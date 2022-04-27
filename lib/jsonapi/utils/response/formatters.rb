@@ -1,3 +1,5 @@
+require 'jsonapi-resources'
+
 module JSONAPI
   module Utils
     module Response
