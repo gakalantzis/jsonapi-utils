@@ -18,11 +18,11 @@ module JSONAPI::Utils
 
     # Instantiate the request object.
     #
-    # @return [JSONAPI::RequestParser]
+    # @return [JSONAPI::Request]
     #
     # @api public
     def setup_request
-      @request ||= JSONAPI::RequestParser.new(
+      @request ||= JSONAPI::Request.new(
         params,
         context: context,
         key_formatter: key_formatter,
