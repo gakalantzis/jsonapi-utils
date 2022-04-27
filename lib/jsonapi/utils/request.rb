@@ -1,5 +1,8 @@
+require 'jsonapi-resources'
+
 module JSONAPI::Utils
   module Request
+    include JSONAPI
     # Setup and check request before action gets actually evaluated.
     #
     # @api public
