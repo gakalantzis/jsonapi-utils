@@ -100,7 +100,7 @@ module JSONAPI
         #
         # @api private
         def build_response_document(object, options)
-          results = JSONAPI::OperationResult.new
+          results = JSONAPI::OperationResults.new
 
           if object.respond_to?(:to_ary)
             results.add_result(build_collection_result(object, options))
