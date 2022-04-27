@@ -22,7 +22,7 @@ module JSONAPI::Utils
     #
     # @api public
     def setup_request
-      @request ||= JSONAPI::Request.new(
+      @request ||= JSONAPI::RequestParser.new(
         params,
         context: context,
         key_formatter: key_formatter,
